@@ -23,6 +23,7 @@ class TestAddToCart():
         print("Membuka: https://magento.softwaretestingboard.com/ ...")
         self.driver.get("https://magento.softwaretestingboard.com/")
         self.driver.set_window_size(654, 672)
+        
         try:
           self.driver.find_element(
               By.CSS_SELECTOR, ".product-item:nth-child(6) .product-image-photo").click()
